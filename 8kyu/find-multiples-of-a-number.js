@@ -10,4 +10,14 @@
 
 function findMultiples(integer, limit) {
     //your code here
+    const multiples = [];
+
+    for (let i = integer; i <= limit; i += integer) {
+        multiples.push(i);
+    }
+
+    return multiples;
 }
+// Example usage:
+const result = findMultiples(2, 6);
+console.log(result); // Output: [2, 4, 6]
